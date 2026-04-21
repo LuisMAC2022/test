@@ -15,19 +15,7 @@ body {
   color: #ffffff;
 }
 
-.skip-link {
-  position: absolute;
-  left: -9999px;
-}
 
-.skip-link:focus {
-  left: 1rem;
-  top: 1rem;
-  z-index: 10;
-  background: #ffffff;
-  color: #000000;
-  padding: 0.5rem 0.75rem;
-}
 
 main {
   width: 100%;
@@ -41,9 +29,3 @@ h1 {
   z-index: 1;
 }
 
-#screen-canvas {
-  display: block;
-  width: 100vw;
-  height: 100vh;
-  background: teal;
-}
