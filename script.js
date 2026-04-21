@@ -8,6 +8,8 @@ function resizeCanvasToScreen() {
   context.fillRect(0, 0, canvas.width, canvas.height);
 }
 
+resizeCanvasToScreen();
+
 function drawStupidCat() {
 
 
