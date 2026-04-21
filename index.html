@@ -1,71 +1,17 @@
-<!doctype html>
-<html lang="es">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Canvas Playground</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Minimal Canvas Template</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
 </head>
 <body>
-  <div class="app-shell">
-    <aside class="panel editor-panel">
-      <header class="panel-header">
-        <div>
-          <h1>Canvas Playground</h1>
-          <p>Edita JavaScript y dibuja en tiempo real sobre HTML Canvas.</p>
-        </div>
-      </header>
-
-      <section class="toolbar">
-        <button id="runBtn" class="primary">Ejecutar (Ctrl+Enter)</button>
-        <button id="pauseBtn">Pausar</button>
-        <button id="resetBtn">Restaurar ejemplo</button>
-        <button id="clearLogBtn">Limpiar consola</button>
-      </section>
-
-      <section class="quick-help card">
-        <h2>API rápida</h2>
-        <p>Define <code>setup(api)</code> y/o <code>draw(api)</code>.</p>
-        <pre><code>api.canvas   api.ctx      api.width
-api.height   api.mouse    api.keys
-api.time     api.dt       api.frame
-api.clear()  api.circle() api.rect()
-api.line()   api.grid()   api.text()
-api.random() api.map()    api.clamp()</code></pre>
-      </section>
-
-      <section class="editor-wrap card">
-        <label for="codeEditor">Código</label>
-        <textarea id="codeEditor" spellcheck="false"></textarea>
-      </section>
-
-      <section class="console-wrap card">
-        <div class="section-title-row">
-          <label>Consola</label>
-          <span id="statusPill" class="status-pill">listo</span>
-        </div>
-        <pre id="consoleOutput"></pre>
-      </section>
-    </aside>
-
-    <main class="panel preview-panel">
-      <header class="panel-header">
-        <div>
-          <h2>Vista previa</h2>
-          <p>Redimensiona la ventana o interactúa con el mouse sobre el canvas.</p>
-        </div>
-        <div class="stats card compact">
-          <div><span>Resolución</span><strong id="resolutionLabel">0 × 0</strong></div>
-          <div><span>FPS</span><strong id="fpsLabel">0</strong></div>
-        </div>
-      </header>
-
-      <div class="canvas-frame card">
-        <canvas id="stage"></canvas>
-      </div>
-    </main>
-  </div>
-
-  <script src="core.js"></script>
+  <a class="skip-link" href="#main-content">Skip to content</a>
+  <main id="main-content">
+    <h1>Minimal Canvas Template</h1>
+    <canvas id="screen-canvas" aria-label="Teal full-screen canvas"></canvas>
+  </main>
 </body>
 </html>
